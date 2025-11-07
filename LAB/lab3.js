@@ -15,33 +15,33 @@ document.addEventListener("click", () => {
   console.log("Clicked!");
 });
 
-// function createUser(name ="Hoàng Anh", age = 21, isAdmin = false) {
-//     return {
-//         name,
-//         age,
-//         isAdmin,
-//     };
+function createUser(name ="Hoàng Anh", age = 21, isAdmin = false) {
+    return {
+        name,
+        age,
+        isAdmin,
+    };
 
-// }
-// console.log(createUser());
+}
+console.log(createUser());
 
 
-// function mergeArrays(...arrays) {
-//   return arrays.flat();
-// }
-// function sumAll(...numbers) {
-//   return numbers.reduce((total, num) => total + num, 0);
-// }
-// function createProduct(name, price = 0, category = "Chưa phân loại") {
-//   return {
-//     name,
-//     price,
-//     category
-//   };
-// }
-// console.log(mergeArrays([1, 2], [3, 4], [5, 6]));
-// console.log(sumAll(1, 2, 3, 4, 5));
-// console.log(createProduct("iPhone 15", 20000000, "Điện thoại"));
-// console.log(createProduct("Áo thun"));
+function mergeArrays(...arrays) {
+  return arrays.flat();
+}
+function sumAll(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+function createProduct(name, price = 0, category = "Chưa phân loại") {
+  return {
+    name,
+    price,
+    category
+  };
+}
+console.log(mergeArrays([1, 2], [3, 4], [5, 6]));
+console.log(sumAll(1, 2, 3, 4, 5));
+console.log(createProduct("iPhone 15", 20000000, "Điện thoại"));
+console.log(createProduct("Áo thun"));
 
 
