@@ -11,9 +11,9 @@ const getRandomNumber = () => Math.random();
 console.log(getRandomNumber());
 
 // Function 4
-document.addEventListener("click", () => {
-  console.log("Clicked!");
-});
+// document.addEventListener("click", () => {
+//   console.log("Clicked!");
+// });
 
 function createUser(name ="Hoàng Anh", age = 21, isAdmin = false) {
     return {
