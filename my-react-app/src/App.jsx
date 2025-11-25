@@ -1,20 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Booking from "./pages/Booking";
+import Contact from "./pages/Contact";
+import TourDetail from "./pages/TourDetail";
 
 function App() {
-  const name = "Nguyễn Hoàng Anh";
-  const age = 20;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/tour/:id" element={<TourDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
 
-return (
-    <div>
-        <h1 className="text-3xl font-bold text-blue-600 text-center my-4">Xin chào {name}</h1>
-        <p>Tuổi: {age + 1}</p>
-        <p>Là học viên: {true ? "Có" : "Không"}</p>
-    </div>
-);  
+  
 }
-
-
-export default App
+export default App;
